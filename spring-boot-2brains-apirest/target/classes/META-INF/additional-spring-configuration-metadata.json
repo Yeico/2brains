@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "authentication.maxEpirationMilisecond",
+    "type": "java.lang.String",
+    "description": "A description for 'authentication.maxEpirationMilisecond'"
+  },
+  {
+    "name": "authentication.URLAPI",
+    "type": "java.lang.String",
+    "description": "A description for 'authentication.URLAPI'"
+  },
+  {
+    "name": "authentication.APIKey",
+    "type": "java.lang.String",
+    "description": "A description for 'authentication.APIKey'"
+  },
+  {
+    "name": "users.randomAPIUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'users.randomAPIUrl'"
+  },
+  {
+    "name": "users.totalRequestApi",
+    "type": "java.lang.String",
+    "description": "A description for 'users.totalRequestApi'"
+  },
+  {
+    "name": "logger.fileName",
+    "type": "java.lang.String",
+    "description": "A description for 'logger.fileName'"
+  }
+]}

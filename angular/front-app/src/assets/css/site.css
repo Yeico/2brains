@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(238, 238, 238);
+    font-family: 'Lato', sans-serif;
+}
+
+.content{
+    margin: 5%;
+}
+
+.user-body{
+	max-height: 50px;
+	overflow-y: hidden;
+	text-transform: capitalize;
+}
+
+.user-profile{
+    background-color: transparent;
+    margin-left: initial;
+    margin-right: initial;
+    display: block;
+}
+
+    .user-profile > .bg-light{
+        border-radius: 10px;
+    }
+
+.profile{
+    border-radius: 50%;
+    min-width: 50px
+}
+
+.btn-profile{
+	color: white !important;
+	float: right;
+}
+
+.another-fields{
+	margin-left: 15px;
+}
+
+.collapse-name{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+}

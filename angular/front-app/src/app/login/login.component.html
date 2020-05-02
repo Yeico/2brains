@@ -1,0 +1,38 @@
+<div class="container-fields">
+    <h3 id="title-outside-fields">{{ title }}</h3>
+    <div class="fields">
+        <div id="title-inside-fields">
+            <small>Introduce the next fields</small>
+        </div>
+
+        <form id="formAction" #formLogin="ngForm" (ngSubmit)="validate()">
+            <div class="form-group">
+                <label for="userEmail">Email</label>
+                <input type="email" name="username" class="form-control" id="username" [(ngModel)]="model.userName" placeholder="Enter your email..." required email #userNameForm="ngModel">
+                <div class="alert alert-dander" *ngIf="userNameForm.invalid && (userNameForm.dirty || userNameForm.touched)">
+                    <div *ngIf="userNameForm.errors.required">
+                        El correo es requerido
+                    </div>
+                    <div *ngIf="userNameForm.errors.email">
+                        El correo no es valido
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="form-group">
+                <label for="userPassword">Password</label>
+                <input type="password" name="password" class="form-control" id="password" [(ngModel)]="model.password" placeholder="Enter your password..." required #passwordForm="ngModel">
+                <div class="alert alert-dander" *ngIf="passwordForm.invalid && (passwordForm.dirty || passwordForm.touched)">
+                    <div *ngIf="passwordForm.errors.required">
+                        El correo es requerido
+                    </div>
+                </div>
+            </div>
+
+            <div id="button-sign-in">
+                <button type="button" role="button" class="btn btn-primary btn-block" (click)="validate()" [disabled]="!formLogin.form.valid">Sign In</button>
+            </div>
+        </form>
+    </div>
+</div>

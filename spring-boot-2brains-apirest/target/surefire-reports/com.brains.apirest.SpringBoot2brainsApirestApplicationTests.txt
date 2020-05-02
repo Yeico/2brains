@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.brains.apirest.SpringBoot2brainsApirestApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.119 s - in com.brains.apirest.SpringBoot2brainsApirestApplicationTests
